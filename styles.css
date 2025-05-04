@@ -1,0 +1,306 @@
+.header1 {
+    background-color:rgb(85, 26, 156);
+}
+.fs-4 {
+   color: rgb(0, 255, 251);
+   font-family: "Rubik Distressed", system-ui;
+   font-weight: 400;
+}
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bolder !important;
+}
+.active {
+    background-color: rgb(0, 255, 255) !important;
+}
+.bdy {
+    background-image: url(./Images/Teal-purp\ dinos.jpg );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top:50px;
+}
+.bdy2 {
+    background-image: url(./Images/emiliano-vittoriosi-pbul1fI60pk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+}
+.bdy3 {
+    position: relative;
+    top: 50px;
+    background-image:url(./Images/Rexbone.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bdy4 {
+    position: relative;
+    top: 50px;
+    background-image: url(./Images/rexinthecity.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bdy5 {
+    background-color: aqua;
+}
+.p5main {
+    top:300px !important;
+}
+
+.head1 {
+    color:  rgb(0, 255, 255);
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: 50px;
+    font-style:normal;
+}
+.para1 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(0, 255, 255);
+}
+.Bonensand {
+    align-content: flex-end;
+    width: 175px;;
+    height:auto;
+}
+.rexcity {
+    align-content: flex-end;
+    width: 175px;
+    height:262px;
+}
+.col {
+    background-color: rgb(85, 26, 156);
+}
+.cardtext {
+    color: aliceblue;
+    align-content: center;
+}
+.cardtitle {
+    color: aqua !important;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style:normal;
+}
+.footertext {
+    color: aliceblue;
+}
+.statlist {
+    opacity: 0.8;
+}
+.p2h1 {
+    color: aqua !important;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style:normal;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(85, 26, 156,0.8);
+    border-radius: 50%;
+}
+.p2h2 {
+    color: aqua !important;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style:normal;
+    align-items: center;
+    text-align: center;
+}
+.p5h1 {
+    color: aqua !important;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: 50px;
+    font-style:normal;
+    
+}
+.p5p {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+    color: aqua !important;
+}
+.p5bg {
+    background-color: rgb(85, 26, 156);
+    border-radius: 80%;
+}
+.p2heading {
+    height: 5rem;
+}
+.p5head {
+    background-color: aqua;
+    color: (85, 26, 156) !important;
+   
+}
+.p5head0 {
+    left: 15% !important;
+}
+.pic1{
+    opacity: 0.8;
+}
+.pic2 {
+    height: 200px !important;
+}
+.sec1 {
+    position: absolute;
+}
+.sec2 {
+    position: relative;
+    top:150px;
+}
+.sec3 {
+    position: relative;
+    top:150px;
+    flex-wrap: wrap;
+}
+.sec4 {
+    position: relative;
+    top: 150px;
+}
+.sec5 {
+    position: relative;
+    top: 150px;
+}
+.p3h1 {
+    color: aqua !important;
+    font-family:"Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style:normal;
+    align-items: center;
+    text-align: center; 
+}
+.p3p1 {
+    color: aqua !important;
+    font-family:"Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style:normal;
+    align-items: center;
+    text-align: center; 
+}
+.dispic {
+   height: 100%;
+   width:100%; 
+}
+.footertext {
+    color: aqua;
+}
+.rcard {
+    position: relative;
+    left:20px;
+}
+.list2 {
+    height: 260px;
+}
+.list1 {
+    height: 305px;
+}
+.dscbtn {
+    background-color: aqua !important;
+    color: rgb(85, 26, 156,1)!important;
+    border-color: rgb(85, 26, 156,1) !important;
+}
+.dscbtn:hover {
+    background-color:rgb(85, 26, 156,1) !important;
+    color: aqua !important;
+    border-color: aqua !important;
+}
+.p1btn {
+    background-color: aqua !important;
+    color: rgb(85, 26, 156,1)!important;
+    font-weight: bolder !important;
+    border-color: rgb(142, 82, 214) !important;
+}
+.p1btn:hover {
+    background-color:rgb(25, 2, 66) !important;
+    color: rgb(0, 255, 255,1) !important;
+    border-color: aqua !important;
+}
+.dsch1 {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-size: 2.5rem !important;
+    font-style:normal;
+}
+.dscbx {
+    color: rgb(85, 26, 156,1)!important;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.dscp {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+}
+.pricetbl {
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    
+}
+.buttons {
+    background-color: aqua !important;
+    color: rgb(85, 26, 156,1)!important;
+    border-color: rgb(85, 26, 156,1) !important;
+}
+.buttons:hover {
+    background-color: rgb(65, 0, 144) !important;
+    color:aqua !important;
+    border-color: aqua !important;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.pricelisthead2 {
+    border-color: rgb(0, 0, 0)!important;
+    background-color: aqua !important;
+    color:rgb(85, 26, 156,1) !important ;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.pricelisthead {
+    border-color: rgb(0, 0, 0)!important;
+    background-color: rgb(85, 26, 156,1) !important;
+    color: aqua !important;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.pricelist {
+    color:rgb(85, 26, 156,1) !important;
+    border-color: rgb(0, 0, 0) !important;
+    background-color:aqua !important;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.pricelist2 {
+    color: aqua !important;
+    border-color: rgb(0, 0, 0) !important;
+    background-color:rgb(85, 26, 156,1) !important;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.cpic {
+   height: 75vh !important;
+}
+
+.Gdiv {
+    background-color: rgb(85, 26, 156,) !important; 
+}
