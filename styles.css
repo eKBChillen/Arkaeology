@@ -196,6 +196,9 @@
    height: 100%;
    width:100%; 
 }
+.carouselpics {
+    max-height: 50vh;
+}
 .footertext {
     color: aqua;
 }
