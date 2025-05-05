@@ -197,7 +197,7 @@
    width:100%; 
 }
 .carouselpics {
-   max-height: 60vh !important; 
+   height: 60vh; 
 }
 .footertext {
     color: aqua;
@@ -310,7 +310,7 @@
 .Gdiv {
     background-color: rgb(85, 26, 156,) !important; 
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     .carouselpics {
         max-height: 32vh !important;
     }
