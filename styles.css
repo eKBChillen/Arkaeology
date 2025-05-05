@@ -317,6 +317,6 @@
 }
 @media screen and (max-width: 501px) {
     .carouselpics {
-        max-height: 60vh !important;
+        min-height: 60vh !important;
     } 
 }
