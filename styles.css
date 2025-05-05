@@ -203,6 +203,9 @@
     position: relative;
     left:20px;
 }
+.p1boxes {
+    min-height: 30vh !important;
+}
 .list2 {
     height: 377px;
 }
