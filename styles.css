@@ -197,7 +197,7 @@
    width:100%; 
 }
 .carouselpics {
-    
+   max-height: 60vh !important; 
 }
 .footertext {
     color: aqua;
@@ -314,9 +314,4 @@
     .carouselpics {
         max-height: 32vh !important;
     }
-}
-@media screen and (max-width: 501px) {
-    .carouselpics {
-        min-height: 60vh !important;
-    } 
 }
