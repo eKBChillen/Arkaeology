@@ -53,10 +53,11 @@
 }
 .bdyp5 {
     position: relative;
-    top: 100px
+    top: 100px;
+    background-color: aqua;
 }
 .bdy5 {
-    background-color: aqua;
+    background-color: rgb(85, 26, 156);
 }
 .p5main {
     position: relative;
@@ -133,9 +134,12 @@
     font-weight: 400;
     font-size: 3rem;
     font-style:normal;
-    white-space: normal;
-    
-}
+    }
+    @media (max-width: 480px) {
+        .p5h1 {
+            font-size: 1.5rem !important;
+        }
+    }
 .p5p {
     font-family: "Fredericka the Great", serif;
     font-weight: 500;
