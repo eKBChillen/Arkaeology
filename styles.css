@@ -20,7 +20,7 @@
     background-position: center;
     background-size: 100% 100vh;
     position: relative;
-    top:50px;
+    top:100px;
 }
 .bdy2 {
     background-image: url(./Images/emiliano-vittoriosi-pbul1fI60pk-unsplash.jpg);
@@ -28,6 +28,8 @@
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100vh;
+    position: relative;
+    top:50px
 }
 .bdy3 {
     position: relative;
@@ -46,12 +48,19 @@
     background-attachment: fixed;
     background-position: center;
     background-size: 100% 100vh;
+    position: relative;
+    top: 100px;
+}
+.bdyp5 {
+    position: relative;
+    top: 100px
 }
 .bdy5 {
     background-color: aqua;
 }
 .p5main {
-    top:300px !important;
+    position: relative;
+    top:10px !important;
 }
 
 .head1 {
@@ -122,20 +131,21 @@
     color: aqua !important;
     font-family: "Rubik Dirt", system-ui;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 3rem;
     font-style:normal;
+    white-space: normal;
     
 }
 .p5p {
     font-family: "Fredericka the Great", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: xx-large;
+    font-size: 1.5rem;
     color: aqua !important;
 }
 .p5bg {
     background-color: rgb(85, 26, 156);
-    border-radius: 80%;
+    
 }
 .p2heading {
     height: 5rem;
