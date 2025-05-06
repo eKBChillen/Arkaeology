@@ -316,7 +316,7 @@
     }
     
 }
-@media screen and (max-width: 1000px) and (min-width:415px) {
+@media screen and (max-width: 3000px) and (min-width:415px) {
     .carouselpics {
         min-height: 60vh !important;
     }
