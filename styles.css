@@ -307,13 +307,16 @@
 .Gdiv {
     background-color: rgb(85, 26, 156,) !important; 
 }
-@media only screen and (min-width:480px) {
+
+.carouselpics {
+    height: 60vh;
+}
+
+@media screen and (max-width:480px) {
     .carouselpics {
-        height: 32vh !important;
+        max-height: 32vh ;
     }
     
 }
-.carouselpics {
-        max-height: 60vh ;
-    }
+
 
