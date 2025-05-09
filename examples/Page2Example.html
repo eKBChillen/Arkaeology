@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arkaeologycluster</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik:ital,wght@0,700;1,700&family=Slackey&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    /* 1) Make the page a column flexbox so we can push the footer down */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 2) Fixed header removes itself from flow; reserve its height */
+    :root {
+      --header-height: 80px; /* tweak this to your actual header height */
+    }
+    body {
+      padding-top: var(--header-height);
+    }
+
+    /* 3) Content area grows to fill remaining space */
+    .page-content {
+      flex: 1;
+    }
+
+    /* 4) Utility: box-sizing and section spacing */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    /* 5) Border between section divs */
+    .section {
+      margin-bottom: 2rem;
+      background-color: #f7f7f7; /* Light gray background */
+      border-radius: 10px;  /* Rounded corners */
+      padding: 1rem; /* Padding inside the section */
+      border: 1px solid #ccc; /* Border around the section */
+    }
+
+    /* 6) Style the list to ensure bullets appear */
+    ul {
+      list-style-type: disc; /* Ensure bullets are present */
+      padding-left: 20px; /* Indentation for bullets */
+    }
+
+    /* 7) Border between divs that contain the lists, except the last one */
+    .section div {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc; /* Border between each div */
+      padding-bottom: 1rem;  /* Add some space after the list */
+    }
+
+    /* 8) Remove bottom border from the last div inside the section */
+    .section div:last-child {
+      border-bottom: none;
+    }
+
+    /* 9) Center p2heading */
+    .p2heading h1 {
+      text-align: center;
+    }
+
+    /* 10) Ensure the last div is pushed underneath */
+    .footer-container {
+      margin-top: 4rem; /* Space between content and footer */
+    }
+
+    /* 11) Center the breeding multiplier section */
+    .breeding-multiplier {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- fixed header -->
+  <header class="fixed-top navbar-light bg-light" style="height: var(--header-height);">
+    <div class="container-fluid header1 h-100">
+      <div class="d-flex h-100 flex-wrap justify-content-center align-items-center border-bottom bg-opacity-30">
+        <a class="d-flex align-items-center mb-0 me-auto text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4 header2">Arkaeology Cluster</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="Page2.html" class="nav-link active" aria-current="page">Cluster Info</a>
+          </li>
+          <li class="nav-item"><a href="Page3.html" class="nav-link">Store</a></li>
+          <li class="nav-item"><a href="Page4.html" class="nav-link">Discord</a></li>
+          <li class="nav-item"><a href="Page5.html" class="nav-link">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- main content + footer wrapper -->
+  <div class="page-content d-flex flex-column align-items-center justify-content-center">
+    <!-- your three-column content -->
+    <main class="container py-4">
+      <div class="p2heading">
+        <h1 class="display-5 py-3 w-75 container-fluid p2h1">ARKAEOLOGY CLUSTER INFO</h1>
+      </div>
+      <div class="row text-center">
+        <div class="col-12 col-md-4 section">          
+          <div>
+            <label for="list1" class="form-label">SERVER NAME</label>
+            <ul id="list1" class="list-unstyled">
+              <li> Arkaeology (Full Crossplay)</li>
+            </ul>
+          </div>
+          <div>
+            <label for="list1" class="form-label">SERVER MULTIPLIERS</label>
+            <ul id="list1" class="list-unstyled">
+              <li>Harvest: x5</li>
+              <li>XP: x2</li>
+              <li>Tame: x5</li>
+              <li>Hatch: x150</li>
+              <li>Mature: x30</li>
+              <li>Imp Quality: x2</li>
+              <li>Tribe dino limit: 200</li>
+              <li>Crop growth: 1.5</li>
+              <li>Dino Decay x2.5 (slower)</li>
+              <li>Structure Decay x2.5 (slower)</li>
+            </ul>
+          </div>
+          <div>
+            <label for="list1" class="form-label">DINO MULTIPLIER</label>
+            <ul id="list1" class="list-unstyled">
+              <li>Weight x100</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 section">
+          <div>
+            <label for="list2" class="form-label">MODDED SETTINGS</label>
+            <ul id="list2" class="list-unstyled">
+              <li>Unlimited Mindwipes</li>
+              <li>Cryosickness Disabled</li>
+              <li>Flyer Carry Enabled</li>
+              <li>Cave Building Enabled</li>
+              <li>Structure Pickup</li>
+              <li>Engrams auto-unlock</li>
+            </ul>
+          </div>
+          <div>
+            <label for="list2" class="form-label">PLAYER MULTIPLIERS</label>
+            <ul id="list2" class="list-unstyled">
+              <li>Health x2.5</li>
+              <li>Stamina x2</li>
+              <li>Weight x100</li>
+              <li>Melee x1.5</li>
+              <li>Fortitude x5</li>
+              <li>Crafting Speed x1.25</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 section">
+          <div>
+            <label for="list3" class="form-label">DECAY TIMERS</label>
+            <ul id="list3" class="list-unstyled">
+              <li>Thatch Decay/Destroy: 10/14 days</li>
+              <li>Wood Decay/Destroy: 20/28 days</li>
+              <li>Adobe Decay/Destroy: 20/28 days</li>
+              <li>Stone Decay/Destroy: 30/42 days</li>
+              <li>Metal Decay/Destroy: 40/56 days</li>
+              <li>Greenhouse Decay/Destroy: 40/56 days</li>
+              <li>Tek Decay/Destroy: 50/70 days</li>
+              <li>Creatures Decay/Destroy: 20/20 days</li>
+              <li>Utility Decay/Destroy: 10/14 days</li>
+              <li>Vault Decay/Destroy: 40/56 days</li>
+              <li>Oil Well Decay/Destroy: 5/7 days</li>
+            </ul>
+          </div>
+          <div>
+            <label for="list3" class="form-label">DINO LEVELS</label>
+            <ul id="list3" class="list-unstyled">
+              <li>Dino Max Level: 150</li>
+              <li>Wyvern Max Level: 190</li>
+              <li>Tek Max Level: 180</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container container-fluid breeding-multiplier">
+        <h2 class="p2h2">BREEDING MULTIPLIERS</h2>
+        <img src="../Images/mating multiplier.png" class="img-fluid pic1" alt="...">
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div class="sec5 mt-auto">
+    <div class="container">
+      <footer class="pt-5 border-top">
+        <div class="d-flex align-items-end flex-column flex-sm-row justify-content-between py-4 my-4">
+          <p class="footertext">© 2025 arkaeologycluster.com. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+ 
+</body>
+</html>

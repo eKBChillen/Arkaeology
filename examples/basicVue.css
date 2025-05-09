@@ -1,0 +1,128 @@
+/* 1) Full-page flex wrapper + reset */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 2) Reserve space for the fixed header */
+:root {
+  --header-height: 70px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--header-height);
+
+  /* full-page background */
+  background: url('../Images/emiliano-vittoriosi-pbul1fI60pk-unsplash.jpg')
+    no-repeat center / cover fixed;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bolder !important;
+}
+
+.active {
+    background-color: rgb(0, 255, 255) !important;
+}
+
+/* 3) Header bar */
+header.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: var(--header-height);
+  background-color: rgba(85, 26, 156, 0.9);
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+}
+
+
+/* 4) Brand text */
+.navbar-ark {
+  color: #00fffb;
+  font-family: 'Rubik Distressed', system-ui;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* 5) Heading pill */
+.p2heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+.p2heading h5 {
+  display: inline-block;
+  background-color: rgba(85, 26, 156, 0.8);
+  color: aqua !important;
+  font-family: 'Rubik Dirt', system-ui;
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 1.5rem 8rem;
+  border-radius: 50%;
+}
+
+/* 6) Main content grows */
+.page-content {
+  /* padding-top: var(--header-height); */
+  flex: 1;
+  width: 100%;
+}
+
+/* 7) Box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 8) Card styling—no manual side margins, rely on row gutters */
+.section {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* 9) Default bullets & indent */
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* 10) Dividers inside cards */
+.section div {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+.section div:last-child {
+  border-bottom: none;
+}
+.sections-grid {
+  display: flex;
+  flex-wrap: wrap;            /* wrap on narrow screens */
+  justify-content: space-evenly; /* equal space around & between cards */
+  align-items: flex-start;    /* top-align them under the pill */
+}
+
+.sections-grid .section {
+  flex: 0 0 auto;             /* size to content—no forced equal widths */
+}
+
+/* 11) Footer & breeding multiplier spacing */
+.footer-container {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.breeding-multiplier {
+  text-align: center;
+  margin-top: 2rem;
+  color: aqua !important;
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-size: xx-large;
+  font-style:normal;
+  align-items: center;
+}
