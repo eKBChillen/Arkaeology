@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arkaeologycluster</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik:ital,wght@0,700;1,700&family=Slackey&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="basicVue.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- fixed header -->
+    <header class="fixed-top navbar-light">
+      <div class="container-fluid header1">
+        <div
+          class="d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <a class="d-flex align-items-center mb-0 me-auto text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="navbar-ark">Arkaeology Cluster</span>
+          </a>
+          <ul class="nav nav-pills flex-wrap">
+            <li class="nav-item" v-for="link in navLinks" :key="link.text">
+              <a
+                :href="link.href"
+                class="nav-link"
+                :class="{ active: link.active }"
+                >{{ link.text }}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <div class="page-content">
+      <main class="container-fluid px-4">
+        <!-- heading pill -->
+        <div class="p2heading">
+          <h5>{{ heading }}</h5>
+        </div>
+
+        <!-- THREE cards: 1 row on md+, gutters of 1.5rem -->
+        <div class="sections-grid ">
+          <div class="section" v-for="(col, i) in columns" :key="i">
+            <div v-for="(section, si) in col.sections" :key="si">
+              <strong><label class="form-label">{{ section.title }}</label></strong>
+              <ul>
+                <li v-for="item in section.items" :key="item">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- breeding multiplier -->
+        <div class="footer-container breeding-multiplier mt-5">
+          <h2>{{ breeding.title }}</h2>
+          <img
+            :src="breeding.imgSrc"
+            class="img-fluid pic1"
+            alt="breeding multiplier"
+          >
+        </div>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <div class="sec5 mt-auto">
+      <div class="container">
+        <footer class="pt-5 border-top">
+          <div
+            class="d-flex align-items-end flex-column flex-sm-row justify-content-between py-4 my-4"
+          >
+            <p class="footertext">{{ footerText }}</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vue 3 via CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- Your application code -->
+  <script src="basicVue.js"></script>
+</body>
+</html>
